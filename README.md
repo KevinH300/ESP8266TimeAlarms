@@ -1,4 +1,3 @@
-Updated version number
 Updated: check if definitions that could conflict with timelib already exist before defining them again
 
 TimeAlarms for ESP arduino version 2.4.0 using newlibc time
