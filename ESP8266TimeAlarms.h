@@ -17,9 +17,11 @@
 #endif
 
 #define USE_SPECIALIST_METHODS  // define this for testing
-typedef enum {
-    dowInvalid, dowSunday, dowMonday, dowTuesday, dowWednesday, dowThursday, dowFriday, dowSaturday
-} timeDayOfWeek_t;
+#if !defined(timeDayOfWeek_t)
+  typedef enum {
+      TA_dowInvalid, TA_dowSunday, TA_dowMonday, TA_dowTuesday, TA_dowWednesday, TA_dowThursday, TA_dowFriday, TA_dowSaturday
+  } timeDayOfWeek_t;
+#endif
 #define SECS_PER_MIN  ((time_t)(60UL))
 #define SECS_PER_HOUR ((time_t)(3600UL))
 #define SECS_PER_DAY  ((time_t)(SECS_PER_HOUR * 24UL))
